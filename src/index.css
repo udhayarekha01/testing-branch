@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "react-grid-layout/css/styles.css";
+@import "react-resizable/css/styles.css";
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* React grid layout helper tweaks */
+.react-grid-item.react-grid-placeholder {
+  background: #3b82f6 !important;
+  opacity: 0.2 !important;
+  border-radius: 0.75rem !important;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #94a3b8;
+  border-bottom: 2px solid #94a3b8;
+}

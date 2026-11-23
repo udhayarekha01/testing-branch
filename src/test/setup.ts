@@ -1,0 +1,25 @@
+import '@testing-library/jest-dom/vitest';
+
+// Polyfill ResizeObserver for jsdom
+class MockResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+}
+
+window.ResizeObserver = MockResizeObserver;
+
+// Polyfill window.matchMedia
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: (query: string) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: () => {},
+    removeListener: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    dispatchEvent: () => false,
+  }),
+});
