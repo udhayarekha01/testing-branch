@@ -25,7 +25,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   );
 
   return (
-    <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-xs mb-6">
+    <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-4 shadow-xs mb-6">
       <div className="flex flex-wrap items-center justify-between gap-4">
         {/* Search Input */}
         <div className="relative flex-1 min-w-[200px] max-w-sm">
@@ -35,7 +35,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             placeholder="Search records by ID, channel..."
             value={filters.search || ''}
             onChange={e => onChange(prev => ({ ...prev, search: e.target.value }))}
-            className="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder:text-slate-400"
+            className="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder:text-slate-400"
           />
         </div>
 
@@ -47,7 +47,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             <select
               value={filters.category || 'all'}
               onChange={e => onChange(prev => ({ ...prev, category: e.target.value }))}
-              className="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-2 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 cursor-pointer"
+              className="text-xs bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-2 text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 cursor-pointer"
             >
               <option value="all">All Categories</option>
               {categories.map(cat => (
@@ -63,7 +63,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             <select
               value={filters.region || 'all'}
               onChange={e => onChange(prev => ({ ...prev, region: e.target.value }))}
-              className="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-2 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 cursor-pointer"
+              className="text-xs bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-2 text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 cursor-pointer"
             >
               <option value="all">All Regions</option>
               {regions.map(reg => (
@@ -75,21 +75,21 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           </div>
 
           {/* Date Range Inputs */}
-          <div className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-lg px-2 py-1">
+          <div className="flex items-center gap-2 bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1">
             <Calendar className="w-3.5 h-3.5 text-slate-400" />
             <input
               type="date"
               value={filters.startDate || ''}
               onChange={e => onChange(prev => ({ ...prev, startDate: e.target.value }))}
-              className="text-xs bg-transparent border-0 text-slate-700 focus:outline-none cursor-pointer"
+              className="text-xs bg-transparent border-0 text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer"
               title="Start Date"
             />
-            <span className="text-slate-300 text-xs">to</span>
+            <span className="text-slate-300 dark:text-slate-600 text-xs">to</span>
             <input
               type="date"
               value={filters.endDate || ''}
               onChange={e => onChange(prev => ({ ...prev, endDate: e.target.value }))}
-              className="text-xs bg-transparent border-0 text-slate-700 focus:outline-none cursor-pointer"
+              className="text-xs bg-transparent border-0 text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer"
               title="End Date"
             />
           </div>
@@ -98,7 +98,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           {isFiltered && (
             <button
               onClick={onReset}
-              className="inline-flex items-center gap-1 text-xs px-3 py-2 rounded-lg bg-rose-50 text-rose-700 hover:bg-rose-100 font-medium transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1 text-xs px-3 py-2 rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-rose-900/40 font-medium transition-colors cursor-pointer"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               Reset Filters

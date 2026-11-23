@@ -61,7 +61,7 @@ export const DashboardGrid: React.FC<DashboardGridProps> = ({
             >
               {/* Drag Handle Top Bar */}
               <div
-                className="drag-handle absolute top-2 right-2 z-20 p-1 rounded-md text-slate-300 hover:text-slate-600 hover:bg-slate-100 cursor-grab active:cursor-grabbing transition-all opacity-0 group-hover:opacity-100"
+                className="drag-handle absolute top-2 right-2 z-20 p-1 rounded-md text-slate-300 dark:text-slate-600 hover:text-slate-600 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-grab active:cursor-grabbing transition-all opacity-0 group-hover:opacity-100"
                 title="Drag to rearrange widget"
               >
                 <GripHorizontal className="w-4 h-4" />

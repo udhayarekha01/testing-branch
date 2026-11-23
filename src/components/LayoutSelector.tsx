@@ -38,13 +38,13 @@ export const LayoutSelector: React.FC<LayoutSelectorProps> = ({
 
   return (
     <div className="flex flex-wrap items-center gap-3">
-      <div className="flex items-center gap-1.5 text-xs font-medium text-slate-600 bg-white border border-slate-200 rounded-lg px-2.5 py-1.5 shadow-2xs">
-        <LayoutGrid className="w-3.5 h-3.5 text-indigo-600" />
+      <div className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1.5 shadow-2xs">
+        <LayoutGrid className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
         <span>View:</span>
         <select
           value={activeLayoutName}
           onChange={e => onSelectLayout(e.target.value)}
-          className="bg-transparent font-semibold text-slate-800 focus:outline-none cursor-pointer"
+          className="bg-transparent font-semibold text-slate-800 dark:text-slate-100 focus:outline-none cursor-pointer"
         >
           {layoutNames.map(name => (
             <option key={name} value={name}>
@@ -58,7 +58,7 @@ export const LayoutSelector: React.FC<LayoutSelectorProps> = ({
         <button
           onClick={() => onDeleteLayout(activeLayoutName)}
           title="Delete current saved layout"
-          className="p-1.5 rounded-lg border border-rose-200 bg-rose-50 text-rose-600 hover:bg-rose-100 transition-colors cursor-pointer"
+          className="p-1.5 rounded-lg border border-rose-200 dark:border-rose-800 bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 hover:bg-rose-100 dark:hover:bg-rose-900/40 transition-colors cursor-pointer"
         >
           <Trash2 className="w-3.5 h-3.5" />
         </button>
@@ -67,9 +67,9 @@ export const LayoutSelector: React.FC<LayoutSelectorProps> = ({
       <button
         onClick={onResetToDefault}
         title="Reset to default arrangement"
-        className="inline-flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-colors shadow-2xs cursor-pointer"
+        className="inline-flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-2xs cursor-pointer"
       >
-        <RotateCcw className="w-3 h-3 text-slate-500" />
+        <RotateCcw className="w-3 h-3 text-slate-500 dark:text-slate-400" />
         <span>Default</span>
       </button>
 
@@ -81,7 +81,7 @@ export const LayoutSelector: React.FC<LayoutSelectorProps> = ({
             value={newLayoutName}
             onChange={e => setNewLayoutName(e.target.value)}
             autoFocus
-            className="text-xs px-2.5 py-1.5 rounded-lg border border-indigo-300 focus:ring-2 focus:ring-indigo-500/20 focus:outline-none bg-white text-slate-800 w-36"
+            className="text-xs px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-700 focus:ring-2 focus:ring-indigo-500/20 focus:outline-none bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 w-36"
           />
           <button
             type="submit"
@@ -95,7 +95,7 @@ export const LayoutSelector: React.FC<LayoutSelectorProps> = ({
               setIsSaving(false);
               setNewLayoutName('');
             }}
-            className="text-xs px-2 py-1.5 text-slate-500 hover:text-slate-700 cursor-pointer"
+            className="text-xs px-2 py-1.5 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer"
           >
             Cancel
           </button>
@@ -103,7 +103,7 @@ export const LayoutSelector: React.FC<LayoutSelectorProps> = ({
       ) : (
         <button
           onClick={() => setIsSaving(true)}
-          className="inline-flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-lg bg-indigo-50 border border-indigo-200 text-indigo-700 hover:bg-indigo-100 font-medium transition-colors cursor-pointer"
+          className="inline-flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 font-medium transition-colors cursor-pointer"
         >
           <Plus className="w-3.5 h-3.5" />
           <Save className="w-3 h-3" />

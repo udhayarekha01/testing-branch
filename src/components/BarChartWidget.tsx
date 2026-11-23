@@ -10,6 +10,7 @@ import {
   Tooltip,
   Cell
 } from 'recharts';
+import { useChartTheme } from '../hooks/useChartTheme';
 import { BarChart2 } from 'lucide-react';
 
 interface BarChartWidgetProps {
@@ -17,9 +18,8 @@ interface BarChartWidgetProps {
   isLoading?: boolean;
 }
 
-const COLORS = ['#6366f1', '#3b82f6', '#0ea5e9', '#10b981', '#f59e0b', '#ec4899'];
-
 export const BarChartWidget: React.FC<BarChartWidgetProps> = ({ rows, isLoading }) => {
+  const chart = useChartTheme();
   const categoryData = useMemo(() => {
     if (!rows || rows.length === 0) return [];
 
@@ -38,52 +38,53 @@ export const BarChartWidget: React.FC<BarChartWidgetProps> = ({ rows, isLoading 
 
   if (isLoading) {
     return (
-      <div className="h-full bg-white rounded-xl border border-slate-200 p-5 shadow-xs flex flex-col justify-center items-center animate-pulse">
-        <div className="h-4 bg-slate-200 rounded w-1/4 mb-4"></div>
-        <div className="h-48 bg-slate-100 rounded w-full"></div>
+      <div className="h-full bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5 shadow-xs flex flex-col justify-center items-center animate-pulse">
+        <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-1/4 mb-4"></div>
+        <div className="h-48 bg-slate-100 dark:bg-slate-800 rounded w-full"></div>
       </div>
     );
   }
 
   if (categoryData.length === 0) {
     return (
-      <div className="h-full bg-white rounded-xl border border-slate-200 p-5 shadow-xs flex flex-col items-center justify-center text-center">
-        <BarChart2 className="w-8 h-8 text-slate-300 mb-2" />
-        <h4 className="text-sm font-semibold text-slate-700">No category data available</h4>
+      <div className="h-full bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5 shadow-xs flex flex-col items-center justify-center text-center">
+        <BarChart2 className="w-8 h-8 text-slate-300 dark:text-slate-600 mb-2" />
+        <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">No category data available</h4>
         <p className="text-xs text-slate-400 mt-1">Try expanding your filter range</p>
       </div>
     );
   }
 
   return (
-    <div className="h-full bg-white rounded-xl border border-slate-200 p-5 shadow-xs flex flex-col">
+    <div className="h-full bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5 shadow-xs flex flex-col">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h3 className="text-sm font-semibold text-slate-900">Revenue by Category</h3>
-          <p className="text-xs text-slate-500">Distribution across business sectors</p>
+          <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">Revenue by Category</h3>
+          <p className="text-xs text-slate-500 dark:text-slate-400">Distribution across business sectors</p>
         </div>
       </div>
 
       <div className="flex-1 w-full min-h-[220px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={categoryData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
+            <CartesianGrid strokeDasharray="3 3" stroke={chart.grid} vertical={false} />
             <XAxis
               dataKey="category"
-              stroke="#94a3b8"
+              stroke={chart.axis}
               fontSize={11}
               tickLine={false}
             />
             <YAxis
-              stroke="#94a3b8"
+              stroke={chart.axis}
               fontSize={11}
               tickLine={false}
               tickFormatter={val => `$${val >= 1000 ? (val / 1000).toFixed(0) + 'k' : val}`}
             />
             <Tooltip
               contentStyle={{
-                backgroundColor: '#ffffff',
-                border: '1px solid #e2e8f0',
+                backgroundColor: chart.tooltip.backgroundColor,
+                border: chart.tooltip.border,
+                color: chart.tooltip.color,
                 borderRadius: '8px',
                 boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
                 fontSize: '12px'
@@ -92,7 +93,7 @@ export const BarChartWidget: React.FC<BarChartWidgetProps> = ({ rows, isLoading 
             />
             <Bar dataKey="revenue" radius={[6, 6, 0, 0]}>
               {categoryData.map((_, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                <Cell key={`cell-${index}`} fill={chart.bars[index % chart.bars.length]} />
               ))}
             </Bar>
           </BarChart>
