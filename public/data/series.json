@@ -1,0 +1,542 @@
+[
+  {
+    "date": "2024-01-01",
+    "revenue": 25184,
+    "orders": 147,
+    "activeUsers": 235
+  },
+  {
+    "date": "2024-01-02",
+    "revenue": 21121,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-01-03",
+    "revenue": 22025,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-01-04",
+    "revenue": 52455,
+    "orders": 164,
+    "activeUsers": 263
+  },
+  {
+    "date": "2024-01-05",
+    "revenue": 31340,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-01-06",
+    "revenue": 64340,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-01-07",
+    "revenue": 47630,
+    "orders": 96,
+    "activeUsers": 153
+  },
+  {
+    "date": "2024-01-08",
+    "revenue": 21875,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-01-09",
+    "revenue": 9196,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-01-10",
+    "revenue": 50084,
+    "orders": 198,
+    "activeUsers": 317
+  },
+  {
+    "date": "2024-01-11",
+    "revenue": 14601,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-01-12",
+    "revenue": 40733,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-01-13",
+    "revenue": 52127,
+    "orders": 130,
+    "activeUsers": 208
+  },
+  {
+    "date": "2024-01-14",
+    "revenue": 53958,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-01-15",
+    "revenue": 43541,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-01-16",
+    "revenue": 25919,
+    "orders": 147,
+    "activeUsers": 235
+  },
+  {
+    "date": "2024-01-17",
+    "revenue": 21611,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-01-18",
+    "revenue": 22430,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-01-19",
+    "revenue": 53275,
+    "orders": 164,
+    "activeUsers": 263
+  },
+  {
+    "date": "2024-01-20",
+    "revenue": 31745,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-01-21",
+    "revenue": 65085,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-01-22",
+    "revenue": 48110,
+    "orders": 96,
+    "activeUsers": 153
+  },
+  {
+    "date": "2024-01-23",
+    "revenue": 22620,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-01-24",
+    "revenue": 9431,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-01-25",
+    "revenue": 51074,
+    "orders": 198,
+    "activeUsers": 317
+  },
+  {
+    "date": "2024-01-26",
+    "revenue": 14836,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-01-27",
+    "revenue": 41308,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-01-28",
+    "revenue": 52777,
+    "orders": 130,
+    "activeUsers": 208
+  },
+  {
+    "date": "2024-01-29",
+    "revenue": 54533,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-01-30",
+    "revenue": 44031,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-01-31",
+    "revenue": 26654,
+    "orders": 147,
+    "activeUsers": 235
+  },
+  {
+    "date": "2024-02-01",
+    "revenue": 22101,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-02-02",
+    "revenue": 22835,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-02-03",
+    "revenue": 54095,
+    "orders": 164,
+    "activeUsers": 263
+  },
+  {
+    "date": "2024-02-04",
+    "revenue": 32150,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-02-05",
+    "revenue": 65830,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-02-06",
+    "revenue": 28990,
+    "orders": 96,
+    "activeUsers": 153
+  },
+  {
+    "date": "2024-02-07",
+    "revenue": 23365,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-02-08",
+    "revenue": 9666,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-02-09",
+    "revenue": 52064,
+    "orders": 198,
+    "activeUsers": 317
+  },
+  {
+    "date": "2024-02-10",
+    "revenue": 15071,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-02-11",
+    "revenue": 41883,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-02-12",
+    "revenue": 53427,
+    "orders": 130,
+    "activeUsers": 208
+  },
+  {
+    "date": "2024-02-13",
+    "revenue": 55108,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-02-14",
+    "revenue": 44521,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-02-15",
+    "revenue": 27389,
+    "orders": 147,
+    "activeUsers": 235
+  },
+  {
+    "date": "2024-02-16",
+    "revenue": 22591,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-02-17",
+    "revenue": 23240,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-02-18",
+    "revenue": 54915,
+    "orders": 164,
+    "activeUsers": 263
+  },
+  {
+    "date": "2024-02-19",
+    "revenue": 32555,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-02-20",
+    "revenue": 66575,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-02-21",
+    "revenue": 29470,
+    "orders": 96,
+    "activeUsers": 153
+  },
+  {
+    "date": "2024-02-22",
+    "revenue": 24110,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-02-23",
+    "revenue": 9901,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-02-24",
+    "revenue": 53054,
+    "orders": 198,
+    "activeUsers": 317
+  },
+  {
+    "date": "2024-02-25",
+    "revenue": 15306,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-02-26",
+    "revenue": 42458,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-02-27",
+    "revenue": 54077,
+    "orders": 130,
+    "activeUsers": 208
+  },
+  {
+    "date": "2024-02-28",
+    "revenue": 55683,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-02-29",
+    "revenue": 45011,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-03-01",
+    "revenue": 28124,
+    "orders": 147,
+    "activeUsers": 235
+  },
+  {
+    "date": "2024-03-02",
+    "revenue": 23081,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-03-03",
+    "revenue": 23645,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-03-04",
+    "revenue": 55735,
+    "orders": 164,
+    "activeUsers": 263
+  },
+  {
+    "date": "2024-03-05",
+    "revenue": 32960,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-03-06",
+    "revenue": 67320,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-03-07",
+    "revenue": 29950,
+    "orders": 96,
+    "activeUsers": 153
+  },
+  {
+    "date": "2024-03-08",
+    "revenue": 24855,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-03-09",
+    "revenue": 10136,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-03-10",
+    "revenue": 54044,
+    "orders": 198,
+    "activeUsers": 317
+  },
+  {
+    "date": "2024-03-11",
+    "revenue": 15541,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-03-12",
+    "revenue": 43033,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-03-13",
+    "revenue": 54727,
+    "orders": 130,
+    "activeUsers": 208
+  },
+  {
+    "date": "2024-03-14",
+    "revenue": 56258,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-03-15",
+    "revenue": 12301,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-03-16",
+    "revenue": 28859,
+    "orders": 147,
+    "activeUsers": 235
+  },
+  {
+    "date": "2024-03-17",
+    "revenue": 23571,
+    "orders": 98,
+    "activeUsers": 157
+  },
+  {
+    "date": "2024-03-18",
+    "revenue": 24050,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-03-19",
+    "revenue": 56555,
+    "orders": 164,
+    "activeUsers": 263
+  },
+  {
+    "date": "2024-03-20",
+    "revenue": 33365,
+    "orders": 81,
+    "activeUsers": 129
+  },
+  {
+    "date": "2024-03-21",
+    "revenue": 68065,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-03-22",
+    "revenue": 30430,
+    "orders": 96,
+    "activeUsers": 153
+  },
+  {
+    "date": "2024-03-23",
+    "revenue": 25600,
+    "orders": 149,
+    "activeUsers": 239
+  },
+  {
+    "date": "2024-03-24",
+    "revenue": 10371,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-03-25",
+    "revenue": 55034,
+    "orders": 198,
+    "activeUsers": 317
+  },
+  {
+    "date": "2024-03-26",
+    "revenue": 15776,
+    "orders": 47,
+    "activeUsers": 75
+  },
+  {
+    "date": "2024-03-27",
+    "revenue": 43608,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-03-28",
+    "revenue": 55377,
+    "orders": 130,
+    "activeUsers": 208
+  },
+  {
+    "date": "2024-03-29",
+    "revenue": 56833,
+    "orders": 115,
+    "activeUsers": 184
+  },
+  {
+    "date": "2024-03-30",
+    "revenue": 12791,
+    "orders": 98,
+    "activeUsers": 157
+  }
+]

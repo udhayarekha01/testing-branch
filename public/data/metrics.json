@@ -1,0 +1,38 @@
+[
+  {
+    "id": "total-revenue",
+    "label": "Total Revenue",
+    "value": 3285085,
+    "formattedValue": "$3,285,085",
+    "change": 14.8,
+    "trend": "up",
+    "timeframe": "vs previous quarter"
+  },
+  {
+    "id": "active-users",
+    "label": "Active Accounts",
+    "value": 16464,
+    "formattedValue": "16,464",
+    "change": 8.2,
+    "trend": "up",
+    "timeframe": "vs previous quarter"
+  },
+  {
+    "id": "total-transactions",
+    "label": "Total Transactions",
+    "value": 10290,
+    "formattedValue": "10,290",
+    "change": -2.4,
+    "trend": "down",
+    "timeframe": "vs previous quarter"
+  },
+  {
+    "id": "satisfaction-score",
+    "label": "Satisfaction Score",
+    "value": 4.4,
+    "formattedValue": "4.4 / 5.0",
+    "change": 4.1,
+    "trend": "up",
+    "timeframe": "vs previous quarter"
+  }
+]
