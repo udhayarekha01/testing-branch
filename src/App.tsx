@@ -11,9 +11,11 @@ import { LayoutSelector } from './components/LayoutSelector';
 import { DashboardGrid } from './components/DashboardGrid';
 import { ToastContainer } from './components/Toast';
 import type { ToastMessage } from './components/Toast';
+import { ThemeProvider } from './context/ThemeContext';
+import { ThemeToggle } from './components/common/ThemeToggle';
 import { BarChart3, RefreshCw, AlertTriangle } from 'lucide-react';
 
-export function App() {
+function Dashboard() {
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
   const addToast = useCallback((type: 'success' | 'error' | 'info', message: string) => {
@@ -69,19 +71,19 @@ export function App() {
   }, [data, isLoading]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 pb-16">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-800/60 text-slate-800 dark:text-slate-100 pb-16">
       {/* Top Header Navbar */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-2xs">
+      <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-30 shadow-2xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-sm shadow-indigo-200">
               <BarChart3 className="w-5 h-5" />
             </div>
             <div>
-              <h1 className="text-base font-bold text-slate-900 leading-tight">
+              <h1 className="text-base font-bold text-slate-900 dark:text-slate-100 leading-tight">
                 Analysis Dashboard Application
               </h1>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 Operational & Business Intelligence
               </p>
             </div>
@@ -98,13 +100,15 @@ export function App() {
               onResetToDefault={resetToDefault}
             />
 
+            <ThemeToggle />
+
             <button
               onClick={retry}
               disabled={isLoading}
               title="Refresh dataset"
-              className="p-2 rounded-lg border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-40 transition-colors shadow-2xs cursor-pointer"
+              className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 disabled:opacity-40 transition-colors shadow-2xs cursor-pointer"
             >
-              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin text-indigo-600' : ''}`} />
+              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin text-indigo-600 dark:text-indigo-400' : ''}`} />
             </button>
           </div>
         </div>
@@ -114,12 +118,12 @@ export function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         {/* Global Error Banner */}
         {status === 'error' && (
-          <div className="mb-6 p-4 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-between">
+          <div className="mb-6 p-4 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <AlertTriangle className="w-5 h-5 text-rose-600 shrink-0" />
+              <AlertTriangle className="w-5 h-5 text-rose-600 dark:text-rose-400 shrink-0" />
               <div>
-                <h4 className="text-sm font-semibold text-rose-900">Failed to load dashboard data</h4>
-                <p className="text-xs text-rose-700">{error?.message || 'Network error occurred while fetching REST data.'}</p>
+                <h4 className="text-sm font-semibold text-rose-900 dark:text-rose-100">Failed to load dashboard data</h4>
+                <p className="text-xs text-rose-700 dark:text-rose-300">{error?.message || 'Network error occurred while fetching REST data.'}</p>
               </div>
             </div>
             <button
@@ -151,6 +155,14 @@ export function App() {
       {/* Toast Notifications */}
       <ToastContainer toasts={toasts} onDismiss={dismissToast} />
     </div>
+  );
+}
+
+export function App() {
+  return (
+    <ThemeProvider>
+      <Dashboard />
+    </ThemeProvider>
   );
 }
 
