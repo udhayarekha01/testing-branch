@@ -1,74 +1,108 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { describe, it, expect, beforeEach } from 'vitest';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import App from '../App';
-import metricsFixture from '../../public/data/metrics.json';
-import seriesFixture from '../../public/data/series.json';
-import rowsFixture from '../../public/data/rows.json';
 
-describe('Analysis Dashboard Full Flow Tests', () => {
+describe('Task Tracker Integration Tests', () => {
   beforeEach(() => {
-    vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.includes('metrics.json')) {
-        return Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve(metricsFixture)
-        });
-      }
-      if (url.includes('series.json')) {
-        return Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve(seriesFixture)
-        });
-      }
-      if (url.includes('rows.json')) {
-        return Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve(rowsFixture)
-        });
-      }
-      return Promise.reject(new Error(`Unhandled URL: ${url}`));
-    }));
+    localStorage.clear();
   });
 
-  it('filters data by search input', async () => {
+  it('creates a new task through the modal', async () => {
     render(<App />);
 
+    // Click Add Task button
+    const addButton = screen.getByRole('button', { name: /Add Task/i });
+    fireEvent.click(addButton);
+
+    // Modal opens
+    expect(screen.getByRole('heading', { name: 'Create New Task' })).toBeInTheDocument();
+
+    const titleInput = screen.getByPlaceholderText(/Update client presentation slides/i);
+    const descInput = screen.getByPlaceholderText(/Add additional details/i);
+
+    fireEvent.change(titleInput, { target: { value: 'Write end-to-end tests' } });
+    fireEvent.change(descInput, { target: { value: 'Cover task creation and deletion' } });
+
+    const submitBtn = screen.getByRole('button', { name: 'Create Task' });
+    fireEvent.click(submitBtn);
+
+    // Modal closes and new task appears
     await waitFor(() => {
-      expect(screen.getByText('Detailed Transaction Records')).toBeInTheDocument();
+      expect(screen.getByText('Write end-to-end tests')).toBeInTheDocument();
+      expect(screen.getByText('Cover task creation and deletion')).toBeInTheDocument();
     });
 
-    const searchInput = screen.getByPlaceholderText(/Search records/i);
-    fireEvent.change(searchInput, { target: { value: 'TX-1001' } });
+    // Check toast notification
+    expect(screen.getByText('Created task "Write end-to-end tests"')).toBeInTheDocument();
+  });
+
+  it('filters tasks by search input', async () => {
+    render(<App />);
+
+    const searchInput = screen.getByPlaceholderText(/Search tasks by title or description/i);
+    fireEvent.change(searchInput, { target: { value: 'grocery' } });
 
     await waitFor(() => {
-      expect(screen.getByText('TX-1001')).toBeInTheDocument();
+      expect(screen.getByText('Weekly grocery run and meal prep')).toBeInTheDocument();
+      expect(screen.queryByText('Finalize Q3 roadmap review')).not.toBeInTheDocument();
     });
 
-    // Reset button appears and can be clicked
-    const resetBtn = screen.getByText('Reset Filters');
-    expect(resetBtn).toBeInTheDocument();
+    // Clear search using Reset
+    const resetBtn = screen.getByText('Reset');
     fireEvent.click(resetBtn);
 
     await waitFor(() => {
-      expect(screen.getByText('Page 1 of 9')).toBeInTheDocument();
+      expect(screen.getByText('Finalize Q3 roadmap review')).toBeInTheDocument();
     });
   });
 
-  it('saves and switches named layouts', async () => {
+  it('toggles task completion and clears completed tasks', async () => {
     render(<App />);
 
-    // Click "Save Current View"
-    const saveBtn = screen.getByText('Save Current View');
-    fireEvent.click(saveBtn);
+    // Check grocery task starts completed
+    expect(screen.getByText('Weekly grocery run and meal prep')).toBeInTheDocument();
 
-    const nameInput = screen.getByPlaceholderText(/Layout name/i);
-    fireEvent.change(nameInput, { target: { value: 'Executive View' } });
+    // Clear completed button should be present
+    const clearBtn = screen.getByRole('button', { name: /Clear completed/i });
+    expect(clearBtn).toBeInTheDocument();
+    fireEvent.click(clearBtn);
 
-    const submitBtn = screen.getByRole('button', { name: 'Save' });
-    fireEvent.click(submitBtn);
+    // Completed task should be removed
+    await waitFor(() => {
+      expect(screen.queryByText('Weekly grocery run and meal prep')).not.toBeInTheDocument();
+    });
+  });
+
+  it('deletes an individual task', async () => {
+    render(<App />);
+
+    expect(screen.getByText('Finalize Q3 roadmap review')).toBeInTheDocument();
+
+    const deleteButtons = screen.getAllByLabelText('Delete task');
+    // Delete the first task
+    fireEvent.click(deleteButtons[0]);
 
     await waitFor(() => {
-      expect(screen.getByText('Layout "Executive View" saved successfully.')).toBeInTheDocument();
+      expect(screen.queryByText('Finalize Q3 roadmap review')).not.toBeInTheDocument();
+    });
+  });
+
+  it('edits an existing task', async () => {
+    render(<App />);
+
+    const editButtons = screen.getAllByLabelText('Edit task');
+    fireEvent.click(editButtons[0]);
+
+    expect(screen.getByRole('heading', { name: 'Edit Task' })).toBeInTheDocument();
+
+    const titleInput = screen.getByDisplayValue('Finalize Q3 roadmap review');
+    fireEvent.change(titleInput, { target: { value: 'Finalize Q3 roadmap review [URGENT]' } });
+
+    const saveBtn = screen.getByRole('button', { name: 'Save Changes' });
+    fireEvent.click(saveBtn);
+
+    await waitFor(() => {
+      expect(screen.getByText('Finalize Q3 roadmap review [URGENT]')).toBeInTheDocument();
     });
   });
 });
