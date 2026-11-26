@@ -1,52 +1,33 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
+import { describe, it, expect, beforeEach } from 'vitest';
+import { render, screen } from '@testing-library/react';
 import App from '../App';
-import metricsFixture from '../../public/data/metrics.json';
-import seriesFixture from '../../public/data/series.json';
-import rowsFixture from '../../public/data/rows.json';
 
-describe('Dashboard Render Smoke Test', () => {
+describe('Task Tracker Smoke Test', () => {
   beforeEach(() => {
-    vi.stubGlobal('fetch', vi.fn((url: string) => {
-      if (url.includes('metrics.json')) {
-        return Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve(metricsFixture)
-        });
-      }
-      if (url.includes('series.json')) {
-        return Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve(seriesFixture)
-        });
-      }
-      if (url.includes('rows.json')) {
-        return Promise.resolve({
-          ok: true,
-          json: () => Promise.resolve(rowsFixture)
-        });
-      }
-      return Promise.reject(new Error(`Unhandled URL: ${url}`));
-    }));
+    localStorage.clear();
   });
 
-  it('renders dashboard header, controls, and loaded data cleanly', async () => {
+  it('renders task tracker header, metrics, and default tasks', () => {
     render(<App />);
-    expect(screen.getByText('Analysis Dashboard Application')).toBeInTheDocument();
-    expect(screen.getByText('Operational & Business Intelligence')).toBeInTheDocument();
-    expect(screen.getByText('Save Current View')).toBeInTheDocument();
 
-    // Wait for data to load and KPI cards to appear
-    await waitFor(() => {
-      expect(screen.getByText('Total Revenue')).toBeInTheDocument();
-      expect(screen.getByText('Active Accounts')).toBeInTheDocument();
-      expect(screen.getByText('Total Transactions')).toBeInTheDocument();
-      expect(screen.getByText('Satisfaction Score')).toBeInTheDocument();
-    });
+    // Header title and subtitle
+    expect(screen.getByText('Simple Task Tracker')).toBeInTheDocument();
+    expect(
+      screen.getByText('Organize, track, and complete tasks effortlessly')
+    ).toBeInTheDocument();
 
-    // Check charts and table headers
-    expect(screen.getByText('Revenue & Active Users Trend')).toBeInTheDocument();
-    expect(screen.getByText('Revenue by Category')).toBeInTheDocument();
-    expect(screen.getByText('Detailed Transaction Records')).toBeInTheDocument();
+    // Metric cards
+    expect(screen.getByText('Total Tasks')).toBeInTheDocument();
+    expect(screen.getAllByText('In Progress').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Completed').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText('Overdue')).toBeInTheDocument();
+
+    // Default tasks rendered
+    expect(screen.getByText('Finalize Q3 roadmap review')).toBeInTheDocument();
+    expect(screen.getByText('Prepare design assets for landing page')).toBeInTheDocument();
+    expect(screen.getByText('Weekly grocery run and meal prep')).toBeInTheDocument();
+
+    // Add task button
+    expect(screen.getByRole('button', { name: /Add Task/i })).toBeInTheDocument();
   });
 });
