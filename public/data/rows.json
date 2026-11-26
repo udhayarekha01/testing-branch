@@ -8,7 +8,8 @@
     "transactions": 32,
     "revenue": 4576,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1002",
@@ -19,7 +20,8 @@
     "transactions": 49,
     "revenue": 8134,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1003",
@@ -30,7 +32,8 @@
     "transactions": 66,
     "revenue": 12474,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1004",
@@ -52,7 +55,8 @@
     "transactions": 15,
     "revenue": 3525,
     "satisfaction": 4.3,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1006",
@@ -63,7 +67,8 @@
     "transactions": 32,
     "revenue": 8256,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1007",
@@ -74,7 +79,8 @@
     "transactions": 49,
     "revenue": 13769,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1008",
@@ -96,7 +102,8 @@
     "transactions": 83,
     "revenue": 27141,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1010",
@@ -107,7 +114,8 @@
     "transactions": 15,
     "revenue": 5250,
     "satisfaction": 4.8,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1011",
@@ -118,7 +126,8 @@
     "transactions": 32,
     "revenue": 11936,
     "satisfaction": 4.9,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Low"
   },
   {
     "id": "TX-1012",
@@ -140,7 +149,8 @@
     "transactions": 66,
     "revenue": 27654,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1014",
@@ -151,7 +161,8 @@
     "transactions": 83,
     "revenue": 36686,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1015",
@@ -162,7 +173,8 @@
     "transactions": 15,
     "revenue": 6975,
     "satisfaction": 4,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1016",
@@ -184,7 +196,8 @@
     "transactions": 49,
     "revenue": 25039,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1018",
@@ -195,7 +208,8 @@
     "transactions": 66,
     "revenue": 8844,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1019",
@@ -206,7 +220,8 @@
     "transactions": 83,
     "revenue": 13031,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1020",
@@ -228,7 +243,8 @@
     "transactions": 32,
     "revenue": 6496,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1022",
@@ -239,7 +255,8 @@
     "transactions": 49,
     "revenue": 11074,
     "satisfaction": 4.7,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Medium"
   },
   {
     "id": "TX-1023",
@@ -250,7 +267,8 @@
     "transactions": 66,
     "revenue": 16434,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1024",
@@ -272,7 +290,8 @@
     "transactions": 15,
     "revenue": 4425,
     "satisfaction": 5,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1026",
@@ -283,7 +302,8 @@
     "transactions": 32,
     "revenue": 10176,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1027",
@@ -294,7 +314,8 @@
     "transactions": 49,
     "revenue": 16709,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1028",
@@ -316,7 +337,8 @@
     "transactions": 83,
     "revenue": 32121,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1030",
@@ -327,7 +349,8 @@
     "transactions": 15,
     "revenue": 6150,
     "satisfaction": 4.2,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1031",
@@ -338,7 +361,8 @@
     "transactions": 32,
     "revenue": 13856,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1032",
@@ -360,7 +384,8 @@
     "transactions": 66,
     "revenue": 31614,
     "satisfaction": 4.5,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "High"
   },
   {
     "id": "TX-1034",
@@ -371,7 +396,8 @@
     "transactions": 83,
     "revenue": 41666,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1035",
@@ -382,7 +408,8 @@
     "transactions": 15,
     "revenue": 1875,
     "satisfaction": 4.7,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1036",
@@ -404,7 +431,8 @@
     "transactions": 49,
     "revenue": 8379,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1038",
@@ -415,7 +443,8 @@
     "transactions": 66,
     "revenue": 12804,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1039",
@@ -426,7 +455,8 @@
     "transactions": 83,
     "revenue": 18011,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1040",
@@ -448,7 +478,8 @@
     "transactions": 32,
     "revenue": 8416,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1042",
@@ -459,7 +490,8 @@
     "transactions": 49,
     "revenue": 14014,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1043",
@@ -470,7 +502,8 @@
     "transactions": 66,
     "revenue": 20394,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1044",
@@ -492,7 +525,8 @@
     "transactions": 15,
     "revenue": 5325,
     "satisfaction": 4.4,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1046",
@@ -503,7 +537,8 @@
     "transactions": 32,
     "revenue": 12096,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1047",
@@ -514,7 +549,8 @@
     "transactions": 49,
     "revenue": 19649,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1048",
@@ -536,7 +572,8 @@
     "transactions": 83,
     "revenue": 37101,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1050",
@@ -547,7 +584,8 @@
     "transactions": 15,
     "revenue": 7050,
     "satisfaction": 4.9,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1051",
@@ -558,7 +596,8 @@
     "transactions": 32,
     "revenue": 15776,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1052",
@@ -580,7 +619,8 @@
     "transactions": 66,
     "revenue": 9174,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1054",
@@ -591,7 +631,8 @@
     "transactions": 83,
     "revenue": 13446,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1055",
@@ -602,7 +643,8 @@
     "transactions": 15,
     "revenue": 2775,
     "satisfaction": 4.1,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Low"
   },
   {
     "id": "TX-1056",
@@ -624,7 +666,8 @@
     "transactions": 49,
     "revenue": 11319,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1058",
@@ -635,7 +678,8 @@
     "transactions": 66,
     "revenue": 16764,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1059",
@@ -646,7 +690,8 @@
     "transactions": 83,
     "revenue": 22991,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1060",
@@ -668,7 +713,8 @@
     "transactions": 32,
     "revenue": 10336,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1062",
@@ -679,7 +725,8 @@
     "transactions": 49,
     "revenue": 16954,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1063",
@@ -690,7 +737,8 @@
     "transactions": 66,
     "revenue": 24354,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1064",
@@ -712,7 +760,8 @@
     "transactions": 15,
     "revenue": 6225,
     "satisfaction": 3.8,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1066",
@@ -723,7 +772,8 @@
     "transactions": 32,
     "revenue": 14016,
     "satisfaction": 3.9,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Medium"
   },
   {
     "id": "TX-1067",
@@ -734,7 +784,8 @@
     "transactions": 49,
     "revenue": 22589,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1068",
@@ -756,7 +807,8 @@
     "transactions": 83,
     "revenue": 42081,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1070",
@@ -767,7 +819,8 @@
     "transactions": 15,
     "revenue": 1950,
     "satisfaction": 4.3,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1071",
@@ -778,7 +831,8 @@
     "transactions": 32,
     "revenue": 4896,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1072",
@@ -800,7 +854,8 @@
     "transactions": 66,
     "revenue": 13134,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1074",
@@ -811,7 +866,8 @@
     "transactions": 83,
     "revenue": 18426,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1075",
@@ -822,7 +878,8 @@
     "transactions": 15,
     "revenue": 3675,
     "satisfaction": 4.8,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1076",
@@ -844,7 +901,8 @@
     "transactions": 49,
     "revenue": 14259,
     "satisfaction": 5,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "High"
   },
   {
     "id": "TX-1078",
@@ -855,7 +913,8 @@
     "transactions": 66,
     "revenue": 20724,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1079",
@@ -866,7 +925,8 @@
     "transactions": 83,
     "revenue": 27971,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1080",
@@ -888,7 +948,8 @@
     "transactions": 32,
     "revenue": 12256,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1082",
@@ -899,7 +960,8 @@
     "transactions": 49,
     "revenue": 19894,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1083",
@@ -910,7 +972,8 @@
     "transactions": 66,
     "revenue": 28314,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1084",
@@ -932,7 +995,8 @@
     "transactions": 15,
     "revenue": 7125,
     "satisfaction": 4.5,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1086",
@@ -943,7 +1007,8 @@
     "transactions": 32,
     "revenue": 15936,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1087",
@@ -954,7 +1019,8 @@
     "transactions": 49,
     "revenue": 5929,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1088",
@@ -976,7 +1042,8 @@
     "transactions": 83,
     "revenue": 13861,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1090",
@@ -987,7 +1054,8 @@
     "transactions": 15,
     "revenue": 2850,
     "satisfaction": 5,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1091",
@@ -998,7 +1066,8 @@
     "transactions": 32,
     "revenue": 6816,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1092",
@@ -1020,7 +1089,8 @@
     "transactions": 66,
     "revenue": 17094,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1094",
@@ -1031,7 +1101,8 @@
     "transactions": 83,
     "revenue": 23406,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1095",
@@ -1042,7 +1113,8 @@
     "transactions": 15,
     "revenue": 4575,
     "satisfaction": 4.2,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1096",
@@ -1064,7 +1136,8 @@
     "transactions": 49,
     "revenue": 17199,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1098",
@@ -1075,7 +1148,8 @@
     "transactions": 66,
     "revenue": 24684,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1099",
@@ -1086,7 +1160,8 @@
     "transactions": 83,
     "revenue": 32951,
     "satisfaction": 4.6,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Low"
   },
   {
     "id": "TX-1100",
@@ -1108,7 +1183,8 @@
     "transactions": 32,
     "revenue": 14176,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1102",
@@ -1119,7 +1195,8 @@
     "transactions": 49,
     "revenue": 22834,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1103",
@@ -1130,7 +1207,8 @@
     "transactions": 66,
     "revenue": 32274,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1104",
@@ -1152,7 +1230,8 @@
     "transactions": 15,
     "revenue": 2025,
     "satisfaction": 3.9,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1106",
@@ -1163,7 +1242,8 @@
     "transactions": 32,
     "revenue": 5056,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1107",
@@ -1174,7 +1254,8 @@
     "transactions": 49,
     "revenue": 8869,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1108",
@@ -1196,7 +1277,8 @@
     "transactions": 83,
     "revenue": 18841,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1110",
@@ -1207,7 +1289,8 @@
     "transactions": 15,
     "revenue": 3750,
     "satisfaction": 4.4,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Medium"
   },
   {
     "id": "TX-1111",
@@ -1218,7 +1301,8 @@
     "transactions": 32,
     "revenue": 8736,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1112",
@@ -1240,7 +1324,8 @@
     "transactions": 66,
     "revenue": 21054,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1114",
@@ -1251,7 +1336,8 @@
     "transactions": 83,
     "revenue": 28386,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1115",
@@ -1262,7 +1348,8 @@
     "transactions": 15,
     "revenue": 5475,
     "satisfaction": 4.9,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1116",
@@ -1284,7 +1371,8 @@
     "transactions": 49,
     "revenue": 20139,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1118",
@@ -1295,7 +1383,8 @@
     "transactions": 66,
     "revenue": 28644,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1119",
@@ -1306,7 +1395,8 @@
     "transactions": 83,
     "revenue": 37931,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1120",
@@ -1328,7 +1418,8 @@
     "transactions": 32,
     "revenue": 16096,
     "satisfaction": 4.2,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "High"
   },
   {
     "id": "TX-1122",
@@ -1339,7 +1430,8 @@
     "transactions": 49,
     "revenue": 6174,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1123",
@@ -1350,7 +1442,8 @@
     "transactions": 66,
     "revenue": 9834,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1124",
@@ -1372,7 +1465,8 @@
     "transactions": 15,
     "revenue": 2925,
     "satisfaction": 4.6,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1126",
@@ -1383,7 +1477,8 @@
     "transactions": 32,
     "revenue": 6976,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1127",
@@ -1394,7 +1489,8 @@
     "transactions": 49,
     "revenue": 11809,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1128",
@@ -1416,7 +1512,8 @@
     "transactions": 83,
     "revenue": 23821,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1130",
@@ -1427,7 +1524,8 @@
     "transactions": 15,
     "revenue": 4650,
     "satisfaction": 3.8,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1131",
@@ -1438,7 +1536,8 @@
     "transactions": 32,
     "revenue": 10656,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1132",
@@ -1460,7 +1559,8 @@
     "transactions": 66,
     "revenue": 25014,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1134",
@@ -1471,7 +1571,8 @@
     "transactions": 83,
     "revenue": 33366,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1135",
@@ -1482,7 +1583,8 @@
     "transactions": 15,
     "revenue": 6375,
     "satisfaction": 4.3,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1136",
@@ -1504,7 +1606,8 @@
     "transactions": 49,
     "revenue": 23079,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1138",
@@ -1515,7 +1618,8 @@
     "transactions": 66,
     "revenue": 32604,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1139",
@@ -1526,7 +1630,8 @@
     "transactions": 83,
     "revenue": 42911,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1140",
@@ -1548,7 +1653,8 @@
     "transactions": 32,
     "revenue": 5216,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1142",
@@ -1559,7 +1665,8 @@
     "transactions": 49,
     "revenue": 9114,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1143",
@@ -1570,7 +1677,8 @@
     "transactions": 66,
     "revenue": 13794,
     "satisfaction": 3.8,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Low"
   },
   {
     "id": "TX-1144",
@@ -1592,7 +1700,8 @@
     "transactions": 15,
     "revenue": 3825,
     "satisfaction": 4,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1146",
@@ -1603,7 +1712,8 @@
     "transactions": 32,
     "revenue": 8896,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1147",
@@ -1614,7 +1724,8 @@
     "transactions": 49,
     "revenue": 14749,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1148",
@@ -1636,7 +1747,8 @@
     "transactions": 83,
     "revenue": 28801,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1150",
@@ -1647,7 +1759,8 @@
     "transactions": 15,
     "revenue": 5550,
     "satisfaction": 4.5,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1151",
@@ -1658,7 +1771,8 @@
     "transactions": 32,
     "revenue": 12576,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1152",
@@ -1680,7 +1794,8 @@
     "transactions": 66,
     "revenue": 28974,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1154",
@@ -1691,7 +1806,8 @@
     "transactions": 83,
     "revenue": 38346,
     "satisfaction": 4.9,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Medium"
   },
   {
     "id": "TX-1155",
@@ -1702,7 +1818,8 @@
     "transactions": 15,
     "revenue": 7275,
     "satisfaction": 5,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1156",
@@ -1724,7 +1841,8 @@
     "transactions": 49,
     "revenue": 6419,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1158",
@@ -1735,7 +1853,8 @@
     "transactions": 66,
     "revenue": 10164,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1159",
@@ -1746,7 +1865,8 @@
     "transactions": 83,
     "revenue": 14691,
     "satisfaction": 4.1,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1160",
@@ -1768,7 +1888,8 @@
     "transactions": 32,
     "revenue": 7136,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1162",
@@ -1779,7 +1900,8 @@
     "transactions": 49,
     "revenue": 12054,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1163",
@@ -1790,7 +1912,8 @@
     "transactions": 66,
     "revenue": 17754,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1164",
@@ -1812,7 +1935,8 @@
     "transactions": 15,
     "revenue": 4725,
     "satisfaction": 4.7,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "High"
   },
   {
     "id": "TX-1166",
@@ -1823,7 +1947,8 @@
     "transactions": 32,
     "revenue": 10816,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1167",
@@ -1834,7 +1959,8 @@
     "transactions": 49,
     "revenue": 17689,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1168",
@@ -1856,7 +1982,8 @@
     "transactions": 83,
     "revenue": 33781,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1170",
@@ -1867,7 +1994,8 @@
     "transactions": 15,
     "revenue": 6450,
     "satisfaction": 3.9,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1171",
@@ -1878,7 +2006,8 @@
     "transactions": 32,
     "revenue": 14496,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1172",
@@ -1900,7 +2029,8 @@
     "transactions": 66,
     "revenue": 32934,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1174",
@@ -1911,7 +2041,8 @@
     "transactions": 83,
     "revenue": 10126,
     "satisfaction": 4.3,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1175",
@@ -1922,7 +2053,8 @@
     "transactions": 15,
     "revenue": 2175,
     "satisfaction": 4.4,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1176",
@@ -1944,7 +2076,8 @@
     "transactions": 49,
     "revenue": 9359,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1178",
@@ -1955,7 +2088,8 @@
     "transactions": 66,
     "revenue": 14124,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1179",
@@ -1966,7 +2100,8 @@
     "transactions": 83,
     "revenue": 19671,
     "satisfaction": 4.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1180",
@@ -1988,7 +2123,8 @@
     "transactions": 32,
     "revenue": 9056,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1182",
@@ -1999,7 +2135,8 @@
     "transactions": 49,
     "revenue": 14994,
     "satisfaction": 3.8,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1183",
@@ -2010,7 +2147,8 @@
     "transactions": 66,
     "revenue": 21714,
     "satisfaction": 3.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1184",
@@ -2032,7 +2170,8 @@
     "transactions": 15,
     "revenue": 5625,
     "satisfaction": 4.1,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1186",
@@ -2043,7 +2182,8 @@
     "transactions": 32,
     "revenue": 12736,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1187",
@@ -2054,7 +2194,8 @@
     "transactions": 49,
     "revenue": 20629,
     "satisfaction": 4.3,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Low"
   },
   {
     "id": "TX-1188",
@@ -2076,7 +2217,8 @@
     "transactions": 83,
     "revenue": 38761,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1190",
@@ -2087,7 +2229,8 @@
     "transactions": 15,
     "revenue": 7350,
     "satisfaction": 4.6,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   },
   {
     "id": "TX-1191",
@@ -2098,7 +2241,8 @@
     "transactions": 32,
     "revenue": 16416,
     "satisfaction": 4.7,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1192",
@@ -2120,7 +2264,8 @@
     "transactions": 66,
     "revenue": 10494,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1194",
@@ -2131,7 +2276,8 @@
     "transactions": 83,
     "revenue": 15106,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1195",
@@ -2142,7 +2288,8 @@
     "transactions": 15,
     "revenue": 3075,
     "satisfaction": 3.8,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Low"
   },
   {
     "id": "TX-1196",
@@ -2164,7 +2311,8 @@
     "transactions": 49,
     "revenue": 12299,
     "satisfaction": 4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1198",
@@ -2175,7 +2323,8 @@
     "transactions": 66,
     "revenue": 18084,
     "satisfaction": 4.1,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "Medium"
   },
   {
     "id": "TX-1199",
@@ -2186,7 +2335,8 @@
     "transactions": 83,
     "revenue": 24651,
     "satisfaction": 4.2,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1200",
@@ -2208,7 +2358,8 @@
     "transactions": 32,
     "revenue": 10976,
     "satisfaction": 4.4,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "High"
   },
   {
     "id": "TX-1202",
@@ -2219,7 +2370,8 @@
     "transactions": 49,
     "revenue": 17934,
     "satisfaction": 4.5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1203",
@@ -2230,7 +2382,8 @@
     "transactions": 66,
     "revenue": 25674,
     "satisfaction": 4.6,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1204",
@@ -2252,7 +2405,8 @@
     "transactions": 15,
     "revenue": 6525,
     "satisfaction": 4.8,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "High"
   },
   {
     "id": "TX-1206",
@@ -2263,7 +2417,8 @@
     "transactions": 32,
     "revenue": 14656,
     "satisfaction": 4.9,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Medium"
   },
   {
     "id": "TX-1207",
@@ -2274,7 +2429,8 @@
     "transactions": 49,
     "revenue": 23569,
     "satisfaction": 5,
-    "status": "Completed"
+    "status": "Completed",
+    "priority": "Low"
   },
   {
     "id": "TX-1208",
@@ -2296,7 +2452,8 @@
     "transactions": 83,
     "revenue": 10541,
     "satisfaction": 3.9,
-    "status": "Flagged"
+    "status": "Flagged",
+    "priority": "High"
   },
   {
     "id": "TX-1210",
@@ -2307,6 +2464,7 @@
     "transactions": 15,
     "revenue": 2250,
     "satisfaction": 4,
-    "status": "Pending"
+    "status": "Pending",
+    "priority": "Medium"
   }
 ]
