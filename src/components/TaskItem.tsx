@@ -105,6 +105,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
 
             {/* Badges */}
             <span
+              aria-label={`${priorityStyle.label} priority`}
               className={`text-[11px] font-medium px-2 py-0.5 rounded-full border ${priorityStyle.bg}`}
             >
               {priorityStyle.label}

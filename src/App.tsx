@@ -172,7 +172,12 @@ export function App() {
         return b.dueDate.localeCompare(a.dueDate);
       }
       if (filters.sortBy === 'priorityDesc') {
-        return priorityRank[b.priority] - priorityRank[a.priority];
+        const diff = priorityRank[b.priority] - priorityRank[a.priority];
+        if (diff !== 0) return diff;
+        if (!a.dueDate && !b.dueDate) return 0;
+        if (!a.dueDate) return 1;
+        if (!b.dueDate) return -1;
+        return a.dueDate.localeCompare(b.dueDate);
       }
       if (filters.sortBy === 'titleAsc') {
         return a.title.localeCompare(b.title);

@@ -3,6 +3,8 @@ import type { Task, Status, Priority, Category } from '../types/task';
 
 const STORAGE_KEY = 'task_tracker_tasks_v1';
 
+const VALID_PRIORITIES: Priority[] = ['low', 'medium', 'high'];
+
 const INITIAL_TASKS: Task[] = [
   {
     id: 'task-1',
@@ -63,7 +65,12 @@ export function useTasks() {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
         const parsed = JSON.parse(stored);
-        if (Array.isArray(parsed)) return parsed;
+        if (Array.isArray(parsed)) {
+          return parsed.map((t: Task) => ({
+            ...t,
+            priority: VALID_PRIORITIES.includes(t.priority) ? t.priority : 'medium'
+          }));
+        }
       }
     } catch (e) {
       console.error('Failed to load tasks from localStorage', e);
