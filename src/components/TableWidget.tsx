@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import type { TableRow } from '../data/types';
+import type { TableRow, Priority } from '../data/types';
 import { ArrowUpDown, ArrowUp, ArrowDown, ChevronLeft, ChevronRight, Inbox } from 'lucide-react';
 
 interface TableWidgetProps {
@@ -7,8 +7,17 @@ interface TableWidgetProps {
   isLoading?: boolean;
 }
 
-type SortField = keyof TableRow;
+type SortField = Exclude<keyof TableRow, 'priority'>;
 type SortOrder = 'asc' | 'desc';
+
+const PRIORITY_STYLES: Record<Priority, string> = {
+  High: 'bg-rose-50 text-rose-700',
+  Medium: 'bg-amber-50 text-amber-700',
+  Low: 'bg-emerald-50 text-emerald-700',
+};
+
+const normalizePriority = (value: unknown): Priority =>
+  value === 'High' || value === 'Medium' || value === 'Low' ? value : 'Medium';
 
 export const TableWidget: React.FC<TableWidgetProps> = ({ rows, isLoading }) => {
   const [sortField, setSortField] = useState<SortField>('date');
@@ -142,6 +151,7 @@ export const TableWidget: React.FC<TableWidgetProps> = ({ rows, isLoading }) => 
               >
                 Status {renderSortIcon('status')}
               </th>
+              <th className="px-4 py-3 select-none">Priority</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
@@ -173,6 +183,13 @@ export const TableWidget: React.FC<TableWidgetProps> = ({ rows, isLoading }) => 
                     }`}
                   >
                     {row.status}
+                  </span>
+                </td>
+                <td className="px-4 py-2.5">
+                  <span
+                    className={`inline-block px-2 py-0.5 rounded text-[10px] font-semibold ${PRIORITY_STYLES[normalizePriority(row.priority)]}`}
+                  >
+                    {normalizePriority(row.priority)}
                   </span>
                 </td>
               </tr>

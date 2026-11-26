@@ -23,6 +23,8 @@ export interface SeriesPoint {
   activeUsers: number;
 }
 
+export type Priority = 'High' | 'Medium' | 'Low';
+
 export interface TableRow {
   id: string;
   date: string;
@@ -33,6 +35,7 @@ export interface TableRow {
   revenue: number;
   satisfaction: number;
   status: 'Completed' | 'Pending' | 'Flagged';
+  priority?: Priority;
 }
 
 export interface Dataset {
