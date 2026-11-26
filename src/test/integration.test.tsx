@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor, within } from '@testing-library/react';
 import App from '../App';
 
 describe('Task Tracker Integration Tests', () => {
@@ -78,9 +78,8 @@ describe('Task Tracker Integration Tests', () => {
 
     expect(screen.getByText('Finalize Q3 roadmap review')).toBeInTheDocument();
 
-    const deleteButtons = screen.getAllByLabelText('Delete task');
-    // Delete the first task
-    fireEvent.click(deleteButtons[0]);
+    const card = screen.getByText('Finalize Q3 roadmap review').closest('.group') as HTMLElement;
+    fireEvent.click(within(card).getByLabelText('Delete task'));
 
     await waitFor(() => {
       expect(screen.queryByText('Finalize Q3 roadmap review')).not.toBeInTheDocument();
@@ -90,8 +89,8 @@ describe('Task Tracker Integration Tests', () => {
   it('edits an existing task', async () => {
     render(<App />);
 
-    const editButtons = screen.getAllByLabelText('Edit task');
-    fireEvent.click(editButtons[0]);
+    const card = screen.getByText('Finalize Q3 roadmap review').closest('.group') as HTMLElement;
+    fireEvent.click(within(card).getByLabelText('Edit task'));
 
     expect(screen.getByRole('heading', { name: 'Edit Task' })).toBeInTheDocument();
 
